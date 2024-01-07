@@ -1,0 +1,27 @@
+package timecomplexity;
+
+public class millisecTimeComplexity {
+  public static void main(String[] args) {
+  
+	  double now=System.currentTimeMillis();
+	  
+	  //findsum(99999);
+	  findsum1(99999);
+	  System.out.println("time taken "+(System.currentTimeMillis()-now)+" milliseconds");
+	  
+}
+  public static void findsum(int n)
+  {
+	  System.out.println(n*(n+1)/2);
+  }
+  public static void findsum1(int c)
+  {
+	  int sum=0;
+	  for(int i=0;i<=c;i++)
+	  {
+		sum=sum+i;  
+	  }
+	  System.out.println("number: "+sum);
+  }
+  
+}
